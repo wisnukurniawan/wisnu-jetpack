@@ -1,6 +1,7 @@
 package com.wisnu.try778.database
 
 import android.arch.lifecycle.LiveData
+import com.wisnu.try778.model.Note
 import java.util.*
 
 /**
@@ -8,8 +9,8 @@ import java.util.*
  */
 class NoteRepository(private val noteDao: NoteDao) {
 
-    fun saveNote(note: String) {
-        val noteDb = NoteDb(id = generateUuid(), content = note)
+    fun saveNote(content: String) {
+        val noteDb = NoteDb(id = generateUuid(), content = content)
         noteDao.insertNote(noteDb)
     }
 
@@ -18,5 +19,9 @@ class NoteRepository(private val noteDao: NoteDao) {
     }
 
     private fun generateUuid(): String = UUID.randomUUID().toString()
+
+    fun deleteNote(note: Note) {
+        noteDao.deleteNote(note.id)
+    }
 
 }

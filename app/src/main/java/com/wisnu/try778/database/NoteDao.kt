@@ -2,7 +2,6 @@ package com.wisnu.try778.database
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.Dao
-import android.arch.persistence.room.Delete
 import android.arch.persistence.room.Insert
 import android.arch.persistence.room.Query
 import com.wisnu.try778.Constant
@@ -19,7 +18,7 @@ interface NoteDao {
     @Insert
     fun insertNote(note: NoteDb)
 
-    @Delete
-    fun deleteNote(note: NoteDb)
+    @Query("DELETE FROM ${Constant.Table.NOTE} WHERE id=:noteId")
+    fun deleteNote(noteId: String)
 
 }

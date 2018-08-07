@@ -18,8 +18,12 @@ class NoteViewModel(private val noteRepository: NoteRepository) : ViewModel() {
         subscribeNoteResult()
     }
 
-    fun saveNote(note: String) {
-        noteRepository.saveNote(note)
+    fun saveNote(content: String) {
+        noteRepository.saveNote(content)
+    }
+
+    fun deleteNote(note: Note) {
+        noteRepository.deleteNote(note)
     }
 
     fun listenNotesResult(): LiveData<List<Note>> {
