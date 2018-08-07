@@ -13,7 +13,7 @@ import com.wisnu.try778.Constant
 @Dao
 interface NoteDao {
 
-    @Query("SELECT * FROM ${Constant.Table.NOTE_DB}")
+    @Query("SELECT * FROM ${Constant.Table.NOTE}")
     fun loadAllNotesLiveData(): LiveData<List<NoteDb>>
 
     @Insert

@@ -10,7 +10,7 @@ import org.koin.dsl.module.applicationContext
 class NoteApp : Application() {
 
     private val applicationModule = applicationContext {
-        bean(Constant.Koin.CONTEXT_APP) { this@NoteApp.applicationContext }
+        bean(Constant.Koin.CONTEXT_APP_DI) { this@NoteApp.applicationContext }
     }
 
     override fun onCreate() {

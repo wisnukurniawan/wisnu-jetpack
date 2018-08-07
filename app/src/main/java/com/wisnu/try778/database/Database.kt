@@ -10,7 +10,8 @@ import android.arch.persistence.room.RoomDatabase
     version = 1,
     entities = [
         NoteDb::class
-    ]
+    ],
+    exportSchema = false
 )
 abstract class Database : RoomDatabase() {
     abstract fun noteDao(): NoteDao
