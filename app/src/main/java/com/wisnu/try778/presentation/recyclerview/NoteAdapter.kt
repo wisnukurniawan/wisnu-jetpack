@@ -1,4 +1,4 @@
-package com.wisnu.try778.recyclerview
+package com.wisnu.try778.presentation.recyclerview
 
 /**
  * Created by wisnu on 8/7/18
