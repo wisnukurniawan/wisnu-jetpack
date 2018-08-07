@@ -3,14 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/item_note_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:textSize="24sp"
         tools:text="note note note note note note" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="#eeeeee" />
 
 </LinearLayout>

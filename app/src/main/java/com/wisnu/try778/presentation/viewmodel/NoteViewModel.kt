@@ -28,7 +28,7 @@ class NoteViewModel(private val noteRepository: NoteRepository) : ViewModel() {
 
     private fun subscribeNoteResult() {
         notesResult = noteRepository.loadNotesLiveData().map { data ->
-            data.map { Note(it.id, it.content) }
+            data.reversed().map { Note(it.id, it.content) }
         }
     }
 

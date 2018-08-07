@@ -7,9 +7,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list_note"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp" />
+        android:layout_height="match_parent"
+        android:paddingTop="8dp" />
 
 </LinearLayout>
