@@ -1,8 +1,10 @@
-package com.wisnu.try778.presentation
+package com.wisnu.try778.presentation.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.wisnu.try778.R
+import com.wisnu.try778.presentation.fragment.FragmentCreateNote
+import com.wisnu.try778.presentation.fragment.FragmentListNote
 
 class MainActivity : AppCompatActivity() {
 

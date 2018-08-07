@@ -1,4 +1,4 @@
-package com.wisnu.try778.presentation
+package com.wisnu.try778.presentation.fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
