@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Note</string>
+    <string name="app_name">Note</string>
     <string name="note_hint">My note...</string>
     <string name="button_save_label">Save</string>
 </resources>
