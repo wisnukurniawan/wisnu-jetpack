@@ -13,4 +13,10 @@
         android:textSize="24sp"
         tools:text="note note note note note note" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="#eeeeee" />
+
 </LinearLayout>
