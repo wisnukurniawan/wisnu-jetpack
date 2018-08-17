@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.wisnu.try778.R
-import com.wisnu.try778.model.Note
 import com.wisnu.try778.presentation.recyclerview.NoteAdapter
 import com.wisnu.try778.presentation.viewmodel.NoteViewModel
 import io.reactivex.Observable
@@ -50,10 +49,8 @@ class FragmentListNote : Fragment() {
 
     private fun initListenNotesResult() {
         noteViewModel.listenNotesResult().observe(this, Observer {
-            if (it?.isNotEmpty() == true) {
-                val noteResultTem = mutableListOf<Note>()
-                noteResultTem.addAll(it.toMutableList())
-                adapter.updateData(noteResultTem)
+            it?.let {
+                adapter.updateData(it.toMutableList())
             }
         })
     }
